@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Starbucks Philippines - Find a Store</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <link rel="icon" href="images/favicon.ico" />
+</head>
+<body class="find-store-page">
+    <!-- Navigation -->
+    <nav class="main-nav">
+        <div class="nav-container">
+            <div class="logo">
+                <a href="index.html"><img src="images/SB.png" alt="Starbucks Logo"></a>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="menu.html">Menu</a></li>
+                <li><a href="rewards.html">Rewards</a></li>
+                <li><a href="find-stre.html">Find a Store</a></li>
+                <li><a href="#" id="logoutBtn">Logout <i class="fas fa-sign-out-alt"></i></a></li>
+            </ul>
+            <div class="hamburger">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </nav>
+    </header>
+
+    <main class="find-store-main">
+        <section class="store-search-section">
+            <div class="search-card">
+                <h1>Find a Starbucks Store</h1>
+                <p>Search for Starbucks stores near you in the Philippines.</p>
+                <div class="search-container">
+                    <input type="text" id="storeSearchInput" placeholder="Enter city, province, or store name" />
+                    <button id="searchBtn" class="btn btn-primary">Search</button>
+                </div>
+                <div id="storeResults" class="store-results">
+                    <!-- Store results will be displayed here -->
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="main-footer">
+        <div class="footer-container">
+            <div class="social-links">
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+            </div>
+            <div class="footer-links">
+                <a href="#">Privacy Policy</a>
+                <span>|</span>
+                <a href="#">Terms of Use</a>
+                <span>|</span>
+                <a href="#">Contact Us</a>
+            </div>
+        <p>© 2025 Starbucks Coffee Company. All rights reserved.</p>
+        <p>This is only for Educational Purposes. (NOT A OFFICIAL WEBSITE OF Starbucks PH)</p>
+        </div>
+    </footer>
+
+
+    <script src="js/script.js"></script>
+    <script>
+        document.getElementById('searchBtn').addEventListener('click', function() {
+            const query = document.getElementById('storeSearchInput').value.trim();
+            const resultsDiv = document.getElementById('storeResults');
+            if (!query) {
+                resultsDiv.innerHTML = '<p>Please enter a search term.</p>';
+                return;
+            }
+            resultsDiv.innerHTML = '<p>Searching for stores matching "<strong>' + query + '</strong>"...</p>';
+        });
+    </script>
+</body>
+</html>
