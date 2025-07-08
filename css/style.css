@@ -33,7 +33,7 @@ a {
     border-radius: 50px;
     font-weight: bold;
     text-align: center;
-    transition: all 0.3s ease;
+    transition: all 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
     cursor: pointer;
 }
 
@@ -46,7 +46,10 @@ a {
 .btn-primary:hover {
     background-color: var(--dark-green);
     border-color: var(--dark-green);
+    transform: scale(1.05);
+    box-shadow: 0 4px 8px rgba(0, 77, 50, 0.4);
 }
+
 
 .btn-secondary {
     background-color: transparent;
@@ -56,6 +59,8 @@ a {
 
 .btn-secondary:hover {
     background-color: rgba(0, 99, 65, 0.1);
+    transform: scale(1.05);
+    box-shadow: 0 4px 8px rgba(0, 77, 50, 0.3);
 }
 
 .btn-login {
@@ -69,6 +74,8 @@ a {
 
 .btn-login:hover {
     background-color: var(--dark-green);
+    transform: scale(1.05);
+    box-shadow: 0 4px 8px rgba(0, 77, 50, 0.4);
 }
 
 .btn-create {
@@ -82,6 +89,8 @@ a {
 
 .btn-create:hover {
     background-color: rgba(0, 99, 65, 0.1);
+    transform: scale(1.05);
+    box-shadow: 0 4px 8px rgba(0, 77, 50, 0.3);
 }
 
 /* Login Page Styles */
@@ -246,7 +255,13 @@ a {
 
 .nav-links a {
     font-weight: 600;
-    transition: color 0.3s;
+    transition: color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.nav-links a:hover {
+    color: var(--green);
+    transform: scale(1.05);
+    box-shadow: 0 4px 8px rgba(0, 77, 50, 0.3);
 }
 
 .nav-links a:hover {
@@ -255,10 +270,13 @@ a {
 
 #logoutBtn {
     color: #d62b1f;
+    transition: text-decoration 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 #logoutBtn:hover {
     text-decoration: underline;
+    transform: scale(1.05);
+    box-shadow: 0 4px 8px rgba(214, 43, 31, 0.4);
 }
 
 .hamburger {
@@ -335,11 +353,12 @@ a {
     border-radius: 8px;
     overflow: hidden;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .product-card:hover {
-    transform: translateY(-10px);
+    transform: translateY(-10px) scale(1.05);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
 }
 
 .product-card img {
@@ -424,6 +443,12 @@ a {
     object-fit: cover;
     border-radius: 8px;
     margin-bottom: 10px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.menu-item img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 77, 50, 0.4);
 }
 
 .menu-item h3 {
