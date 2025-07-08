@@ -590,6 +590,124 @@ a {
     }
 }
 
+/* Store Search Results Styles */
+.store-results {
+    margin-top: 20px;
+    padding: 15px;
+    background-color: var(--white);
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    max-width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.store-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.store-list li {
+    padding: 20px 0;
+    margin-bottom: 10px;
+    border-bottom: 1px solid var(--light-green);
+    font-weight: 600;
+    color: var(--dark-gray);
+}
+
+.store-list li:last-child {
+    border-bottom: none;
+}
+
+/* Find a Store Page Styles */
+.find-store-main {
+    padding: 60px 8%;
+    max-width: 900px;
+    margin: 40px auto;
+    background: var(--white);
+    border-radius: 16px;
+    box-shadow: 0 2px 16px rgba(0,0,0,0.06);
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+}
+
+.find-store-main h1,
+.find-store-main h2 {
+    color: var(--green);
+    font-weight: 700;
+    margin-bottom: 16px;
+    letter-spacing: 1px;
+    text-align: center;
+}
+
+.find-store-main p {
+    color: var(--dark-gray);
+    font-size: 1.1rem;
+    text-align: center;
+    margin-bottom: 24px;
+}
+
+@media (max-width: 768px) {
+    .find-store-main {
+        padding: 30px 4%;
+        max-width: 100%;
+        gap: 20px;
+    }
+}
+
+.store-search-section h1 {
+    font-size: 2.5rem;
+    color: var(--green);
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.store-search-section p {
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 1.1rem;
+    color: var(--dark-gray);
+}
+
+.search-container {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-bottom: 20px;
+}
+
+#storeSearchInput {
+    flex: 1;
+    padding: 12px 15px;
+    font-size: 1rem;
+    border: 2px solid var(--green);
+    border-radius: 50px;
+    outline: none;
+    transition: border-color 0.3s ease;
+}
+
+#storeSearchInput:focus {
+    border-color: var(--dark-green);
+}
+
+#searchBtn {
+    padding: 12px 25px;
+    font-size: 1rem;
+    border-radius: 50px;
+    border: none;
+    background-color: var(--green);
+    color: var(--white);
+    font-weight: 700;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#searchBtn:hover {
+    background-color: var(--dark-green);
+}
+
 /* Credentials Info Styling */
 .credentials-info {
     margin-top: 15px;
